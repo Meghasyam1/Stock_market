@@ -43,6 +43,42 @@
 .d_sect{
     width: 200px
 }
+/* section 3 styling */
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 80%;
+    height: 60px;
+    margin:auto;
+}
+.tick {
+    height: 25px;
+    width: 25px;
+}
+.Dp {
+    height: 75px;
+    width: 75px;
+    display: block;
+    border-radius: 50%;
+}
+/* .cards{
+    background-color: aliceblue;
+    height: 500px;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+} */
+.cards .pics img{
+    height: 150px;
+    max-width: 80%;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid yellow;
+}
 /* social media image styling */
 .s_img img{
     display: block;
@@ -53,6 +89,88 @@
 }
 .s_img{
     display: flex;
+}
+/* section-4 styling */
+.section4{
+    background: url("./photos/page-4.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bitcoin{
+    background: rgba(251, 238, 222,0.6);
+    min-height: 15rem;
+    max-width: 70%;
+    border-radius: 20px;
+    border-color: gold;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.8rem;
+
+}
+.bitcoin span,img{
+    display: block;
+}
+.bitcoin img{
+    height: auto;
+    max-width: 40%;
+}
+/* section 5 styling */
+.section5{
+    background: url("./photos/page-3.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 0.8rem;
+    flex-wrap: wrap;
+}
+.name{
+    display: flex;
+    padding: 0.8rem;
+    column-gap: 0.8rem;
+}
+.name h1{
+    color:black;
+}
+#Email{
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    color: #00796B;
+    background-color: rgba(251, 238, 222);
+    padding: 0.3rem;
+}
+#submit_button{
+    width: 30%;
+    height: 40px;
+    background-color: #00796B;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+/* .info,.media,.updates{
+    max-width: 30%;
+} */
+.updates{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
 }
 @media (min-width:481px){
 .first{
@@ -97,6 +215,76 @@
     padding-top: 0.5rem;
 
     box-sizing: border-box;
+}
+/* styling section 2 for desktop */
+.second{
+    background: url(./photos/page-2.png);
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    max-width: 50%;
+    height: 20%;
+    padding: 0.4rem;
+    color: #00796B;
+
+}
+.heading p{
+    color: black;
+    margin-top: 0.7rem;
+}
+.ducks{
+    max-width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+/* section 3 styling */
+.top_collec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: url(./photos/page-3.png);
+    background-size: cover;
+    background-position: center center;
+}
+.collec{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 0.3rem;
+    min-height: 100vh;
+    /* background: url(./photos/page-3.png);
+    background-size: cover; */
+}
+.cards{
+    background-color: aliceblue;
+    height: 500px;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.pics {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 100%;
+    justify-items: center;
+    margin-bottom: 0.5rem;
+}
+/* section 5 last row */
+.info,.media,.updates{
+    max-width: 30%;
 }
 }
 
@@ -197,7 +385,7 @@
         padding: 0.5rem;
         color: black;
     }
-    .about{
+    /* .about{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -206,11 +394,6 @@
         height: 60px;
         margin:auto;
     }
-    /* .about img{
-        height: 20px;
-        width: 20px;
-        display: block;
-    } */
     .tick {
         height: 25px;
         width: 25px;
@@ -221,6 +404,7 @@
         display: block;
         border-radius: 50%;
     }
+    } */
     .cards{
         background-color: aliceblue;
         height: 500px;
@@ -317,6 +501,11 @@
     .section5{
         height: 100vh;
         width: 100vw;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
     }
     .updates{
         height: 30vh;
